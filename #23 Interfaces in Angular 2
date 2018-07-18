@@ -2,13 +2,16 @@ we lose Strong type because of any data type so to  get  intelligent implements 
 typo graphical error.
 2.Follow the one rule while write interface start name of with IEmployee...
 3.possible to pass public visibilty in constructor inside Interface . with same 
+4.Interface members bydefault public so doesnt need to explicitly access modifier.it will compile time error while 
+include any modifier example: public code:string.
+5.a class that implements an interface must provide implimentattion for all interface member unless the member marked as as ? operator.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export class TestClass {
   constructor(private firstName: string, private lastName: string) { }
 }
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 can possible protected ,in cae if created new function but not implement in class it will comes with error , it will we there untill 
-don't implements properly.
+don't implements properly , only one way to make correct by   question mark next to field(department?:string)
 
 
 export interface IEmployee {
@@ -17,6 +20,7 @@ export interface IEmployee {
   gender: string;
   annualSalary: number;
   dateOfBirth: string;
+  department?:string;
   currentlyMonthlySalary(annualSalary:number):number;
 }
 export class Employee implements IEmployee {
