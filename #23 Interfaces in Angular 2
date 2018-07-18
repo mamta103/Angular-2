@@ -5,6 +5,8 @@ typo graphical error.
 4.Interface members bydefault public so doesnt need to explicitly access modifier.it will compile time error while 
 include any modifier example: public code:string.
 5.a class that implements an interface must provide implimentattion for all interface member unless the member marked as as ? operator.
+6.To reduce the amount of code you have to write , conside using short-hand syntax to initialise class prpperties 
+with constructor parameters.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export class TestClass {
   constructor(private firstName: string, private lastName: string) { }
