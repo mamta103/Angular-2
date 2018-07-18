@@ -1,1 +1,35 @@
+we lose Strong type because of any data type so to  get  intelligent implements Interface,if not get any intelligent easy to make 
+typo graphical error.
+2.Follow the one rule while write interface start name of with IEmployee...
+3.possible to pass public visibilty in constructor inside Interface . with same 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export class TestClass {
+  constructor(private firstName: string, private lastName: string) { }
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+can possible protected ,in cae if created new function but not implement in class it will comes with error , it will we there untill 
+don't implements properly.
 
+
+export interface IEmployee {
+  code: string;
+  name: string;
+  gender: string;
+  annualSalary: number;
+  dateOfBirth: string;
+  currentlyMonthlySalary(annualSalary:number):number;
+}
+export class Employee implements IEmployee {
+  constructor(public code: string, public name: string, public gender: string, public annualSalary: number, public dateOfBirth: string) {
+
+  }
+    currentlyMonthlySalary(annualSalary:number): number{
+    return annualSalary/12;
+  }
+
+}
+export class TestClass {
+  constructor(protected firstName: string, protected lastName: string) { }
+
+
+}
