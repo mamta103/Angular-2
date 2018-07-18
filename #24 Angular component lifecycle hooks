@@ -1,1 +1,16 @@
+A component has a life cycle managed by Angular.Angular.
+1.Create the Component.
+2.renders the Component.
+3.Create and Renders the component children.
+4.check when the component data-bound properties changed.
+Destroy the component before removing it from DOM.
 
+ti tap into and react when these life cycle events occurs these angular offers several life cycle hooks.
+1.ngOnChanges
+2.ngOnInit
+3.ngDoCheck
+4.ngAfterContentInit
+5.ngAfterContentChecked
+6.ngAfterViewInit
+7.mgAfterViewChecked
+8.ngOndestroy
