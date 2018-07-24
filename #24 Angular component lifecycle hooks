@@ -5,7 +5,7 @@ A component has a life cycle managed by Angular.Angular.
 4.check when the component data-bound properties changed.
 Destroy the component before removing it from DOM.
 
-ti tap into and react when these life cycle events occurs these angular offers several life cycle hooks.
+to tap into and react when these life cycle events occurs these angular offers several life cycle hooks.
 1.ngOnChanges
 2.ngOnInit
 3.ngDoCheck
@@ -14,3 +14,11 @@ ti tap into and react when these life cycle events occurs these angular offers s
 6.ngAfterViewInit
 7.mgAfterViewChecked
 8.ngOndestroy
+:::::::::::::::::::::::Most 3 commomly used Lifecycle Hook::::::::::::::::::::::::::::::::::::::
+1.ngOnChanges:execute every time the value of an input an input changes.the hook method receive a simpleChanges object  containing current and 
+previous properties value.this is called before ngOnInit.
+
+2.ngOnInit:-execute after the constructor and after ngOnChanges hook for first time ,it's most commonly uses for component and 
+initialisation and retrieving data.
+
+3.ngOnDestroy: execute just before angular destroy the component and generally uses for performing cleanup.
